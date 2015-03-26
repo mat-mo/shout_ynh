@@ -1,0 +1,40 @@
+{
+    "name": "shout",
+    "id": "shout",
+    "description": {
+        "en": "A multi-user web IRC client"
+    },
+    "licence": "GPL-3",
+    "developer": {
+        "name": "Matanya Moses",
+        "email": "matanya@foss.co.il"
+    },
+    "multi_instance": "false",
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "ask": {
+                    "en": "Choose a domain for shout"
+                },
+                "example": "example.com"
+            },
+            {
+                "name": "path",
+                "ask": {
+                    "en": "Choose a path for shout"
+                },
+                "example": "/shout",
+                "default": "/shout"
+            },
+            {
+                "name": "admin",
+                "ask": {
+                    "en": "Choose an admin user"
+                },
+                "example": "johndoe"
+            }
+        ]
+    }
+}
+
