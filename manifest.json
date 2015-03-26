@@ -24,15 +24,16 @@
                 "ask": {
                     "en": "Choose a path for shout"
                 },
-                "example": "/shout",
-                "default": "/shout"
+                "default": "/"
             },
             {
-                "name": "admin",
+                "name": "public_site",
                 "ask": {
-                    "en": "Choose an admin user"
+                    "en": "Can guest users access this chat?",
+                    "fr": "Les utilisateurs non-enregistrés peuvent-ils accéder à ce chat ?"
                 },
-                "example": "johndoe"
+                "choices": ["Yes", "No"],
+                "default": "Yes"
             }
         ]
     }
