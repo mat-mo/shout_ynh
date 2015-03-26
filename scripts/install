@@ -37,6 +37,12 @@ sudo cp ../conf/shout /etc/init.d/
 sudo chmod +x /etc/init.d/shout
 sudo update-rc.d shout defaults
 
+# Public chat
+if [ "$is_public" = "Yes" ];
+then
+sudo yunohost app setting shout unprotected_uris -v "/"
+fi
+
 # Reload nginx and regenerate SSOwat conf
 sudo service shout start
 sudo service nginx reload
